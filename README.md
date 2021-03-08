@@ -9,6 +9,7 @@ This program is meant to perform a time series prediction on temperature. Test d
 - PyTorch
 - Pandas
 - Tqdm
+- Plotly
 
 ## Usage
 
