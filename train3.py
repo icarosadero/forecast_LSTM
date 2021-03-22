@@ -94,7 +94,7 @@ if __name__ == '__main__':
     """
     df = pd.DataFrame()
     with sq.connect("database.db") as db:
-        df = pd.read_sql("select T,TIMESTAMP from bmp order by ID DESC limit 2048",db,parse_dates={'TIMESTAMP':{'infer_datetime_format':True}})
+        df = pd.read_sql("select T,TIMESTAMP from bmp order by ID DESC limit 256",db,parse_dates={'TIMESTAMP':{'infer_datetime_format':True}})
     df = df.iloc[::-1]
     df = df.reset_index(drop=True)
     df = timestamp_fill(df)
@@ -105,7 +105,7 @@ if __name__ == '__main__':
     """
     Parameters
     """
-    window = 96 #Window subsequence sampling size. Must be even.
+    window = 24 #Window subsequence sampling size. Must be even.
     assert window%2==0
     b = 12 #Split test and training data size
     timestamp = df[t_]

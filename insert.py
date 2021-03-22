@@ -13,4 +13,4 @@ ssh.connect(host, username=user)
 sftp_client = ssh.open_sftp()
 
 #sftp_client.put("predict.html", "/home/pi/bmpbot/predict.html")
-sftp_client.put("predict3.html", "/home/pi/bmpbot/predict2.html")
+sftp_client.put("predict3.html", "/home/pi/bmpbot/predict.html")

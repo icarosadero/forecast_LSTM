@@ -13,7 +13,7 @@ This program is meant to perform a time series prediction on temperature. Test d
 
 ## Usage
 
-First, `cd` to directory and then run either `python3 train.py` or `python3 train2.py`.
+First, `cd` to directory and then run either `python3 train3.py`.
 
 ## Authors
 
